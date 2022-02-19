@@ -1,0 +1,25 @@
+
+<h1>Create a New Post!</h1>
+
+<%= form_with model: @post do |form| %>
+
+<p>
+    <%= form.label "title", "What Did You Do?" %>
+    <%= form.text_field "title" %>
+</p>
+
+<p>
+    <%= form.label "description", "Tell Me More About It!" %>
+    <%= form.text_field "description" %>
+</p>
+
+<p>
+    <%= form.label "posted_on", "When Did You Do This?" %>
+    <%= form.date_field "posted_on" %>
+</p>
+
+
+    <%= form.hidden_field "place_id" %>
+ 
+    <%= form.submit %>
+<% end %>
