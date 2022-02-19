@@ -5,7 +5,6 @@ class PlacesController < ApplicationController
       end
     
       def show
-        # .find(123) is the same as .where({ id: 123 })[0]
         @place = Place.find(params["id"])
       end
     

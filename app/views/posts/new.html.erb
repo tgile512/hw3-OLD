@@ -4,17 +4,17 @@
 <%= form_with model: @post do |form| %>
 
 <p>
-    <%= form.label "title", "What Did You Do?" %>
+    <%= form.label "title", "Name of Trip" %>
     <%= form.text_field "title" %>
 </p>
 
 <p>
-    <%= form.label "description", "Tell Me More About It!" %>
+    <%= form.label "description", "Trip Description" %>
     <%= form.text_field "description" %>
 </p>
 
 <p>
-    <%= form.label "posted_on", "When Did You Do This?" %>
+    <%= form.label "posted_on", "Trip Date" %>
     <%= form.date_field "posted_on" %>
 </p>
 

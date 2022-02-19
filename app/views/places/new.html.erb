@@ -1,9 +1,11 @@
-<h1>Create a New Place!</h1>
+<h1>Create a New Trip!</h1>
 
 <%= form_with model: @place do |form| %>
     <p>
-    <%= form.label "name", "Name of Place" %>
+    <%= form.label "name", "Name of Destination" %>
     <%= form.text_field "name" %>
     <%= form.submit %>
     </p>
 <% end %>
+
+<a href = "/places">Back to Trips</a>
